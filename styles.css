@@ -32,7 +32,7 @@ h1:hover {
     padding: 28px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0, 0.2);
-    width: 355px;
+    width: 400px;
     position: relative;
     margin-top: 30px;
 }
@@ -101,6 +101,7 @@ li {
     border-radius: 15px;
     border-bottom: 1px solid #BDC3C7;
     border-top: 1px solid #BDC3C7;
+    border: 1px solid #BDC3C7;;
 }
 
 li:hover{
@@ -119,11 +120,12 @@ li:hover{
 
 .animation-container {
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 20px;
     margin-right: 20px;
 }
 
-.cute-animation {
+.animation {
     width: 100px;
     height: auto;
     animation: bounce 2s infinite;
