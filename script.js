@@ -5,7 +5,7 @@ const clearAll = document.getElementById('clearAll');
 
 function addTask() {
     const taskText = taskInput.value.trim();
-
+    taskList.style.visibility = "visible";
     if (taskText !== "") {
         const li = document.createElement('li');
         li.textContent = taskText;
@@ -13,7 +13,10 @@ function addTask() {
         const deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'remove';
         deleteBtn.onclick = function(){
-            taskList.removeChild(li);
+            taskList.removeChild(li)
+            if (taskList.getElementsByTagName("li").length == 0){
+                taskList.style.visibility = "hidden";
+            };
         };
         
         li.appendChild(deleteBtn);
@@ -31,6 +34,7 @@ function addTask() {
 function clearTasks() {
     if (taskList.getElementsByTagName("li").length !== 0){
         while(taskList.firstChild) taskList.removeChild(taskList.firstChild);
+        taskList.style.visibility = "hidden";
     } else {
         window.alert("There are no current tasks");
     }
