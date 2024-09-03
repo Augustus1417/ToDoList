@@ -1,0 +1,152 @@
+body {
+    background-color: hsl(0, 0%, 20%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1{
+    font-size: 56px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ECF0F1;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    text-decoration: line-through;
+    text-decoration-color: hsl(143, 80%, 33%);
+    color: hsl(143, 80%, 33%);
+}
+
+.container {
+    background-color: #181414;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    width: 355px;
+    position: relative;
+    margin-top: 30px;
+}
+
+input[type="text"]{
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #BDC3C7;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #2C3E50;
+}
+
+.operationBtn {
+    background-color: hsl(143, 80%, 33%);
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button#addTaskBtn:hover{
+    background-color: #566573;
+}
+
+button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: hsl(143, 80%, 33%);
+    border: none;
+    border-radius: 15px;
+    color: #FFFFFF;
+    transition: background 0.3 ease;
+}
+
+button:hover{
+    background-color: #7D8C8D;
+}
+
+ul#taskList{
+    background-color: hsl(0, 0%, 20%);
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    list-style-type: none;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 15px;
+    border-bottom: 1px solid #BDC3C7;
+    border-top: 1px solid #BDC3C7;
+}
+
+li:hover{
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: hsl(143, 80%, 33%);
+    color: #BDC3C7;
+}
+
+.completed {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: hsl(143, 80%, 33%);
+    color: #BDC3C7;
+}
+
+.animation-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cute-animation {
+    width: 100px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
